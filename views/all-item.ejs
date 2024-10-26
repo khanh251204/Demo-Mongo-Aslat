@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Sách Sản Phẩm</title>
+</head>
+<body>
+    <h1>Danh Sách Sản Phẩm</h1>
+    <ul>
+        <% students.forEach(student => { %>
+            <li>
+                <img src="<%= student.img %>" alt="Hình ảnh sản phẩm" style="width: 100px; height: auto;"> 
+                Tên: <%= student.name %>, Giá: <%= student.price %>, Giảm giá: <%= student.discount %>
+            </li>
+        <% }) %>
+    </ul>
+</body>
+</html>
